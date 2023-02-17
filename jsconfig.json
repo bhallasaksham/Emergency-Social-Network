@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "commonjs",
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "paths": {
+            "~/*": ["./*"],
+            "server/*": ["src/server/*"],
+            "config/*": ["src/config/*"],
+            "public/*": ["src/public/*"],
+            "socketServer/*": ["src/sockerServer/*"],
+            "expressServer/*": ["src/expressServer/*"],
+        }
+    },
+    "exclude": [
+        "build",
+        "node_modules",
+        "static"
+    ]
+}

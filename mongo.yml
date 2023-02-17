@@ -1,0 +1,34 @@
+version: '3.7'
+
+services:
+  mongodb:
+    container_name: mongo
+    image: mongo:5.0.12
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=pass
+    networks:
+      - mongo-compose-network
+    ports:
+      - '27017:27017'
+    volumes:
+      - $PWD/data:/var/lib/mongo
+
+  mongo-express:
+    container_name: mongo-express
+    image: mongo-express
+    networks:
+      - mongo-compose-network
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongodb
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=pass
+    restart: unless-stopped
+    ports:
+      - '8081:8081'
+    volumes:
+      - $PWD/data:/var/lib/mongo
+
+networks:
+  mongo-compose-network:
+    driver: bridge
