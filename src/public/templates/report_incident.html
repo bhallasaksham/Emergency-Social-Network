@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width maximum-scale=1 initial-cale=1.0"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/common.css" />
+    <link rel="stylesheet" href="/styles/navBar.css" />
+    <link rel="stylesheet" href="/styles/notificationModal.css" />
+    <link rel="stylesheet" href="/styles/incident-notification.css" />
+    <link rel="stylesheet" href="/styles/report-incident.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Report Incident</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3><strong>Report Incident</strong></h3>
+      <br />
+      <form id="report-incident">
+        <p>
+          <strong
+            ><label>What was the severity of the earthquake?</label></strong
+          >
+        </p>
+        <br />
+        <br />
+        <select name="severity" id="severity">
+          <option value="choose">Choose</option>
+          <option value="1">
+            1. May not be recognized by most as an earthquake.
+          </option>
+          <option value="2">
+            2. Felt by most people indoor, may be felt by few outdoor people.
+          </option>
+          <option value="3">
+            3. Felt by everyone. It is difficult to stand.
+          </option>
+          <option value="4">
+            4. Causes considerable damage to ordinary buildings.
+          </option>
+          <option value="5">
+            5. Causes Total damage. Waves may be seen on ground.
+          </option>
+        </select>
+
+        <br /><br />
+        <p>
+          <strong><label>Location of Incident</label></strong>
+        </p>
+        <br /><br />
+        <input id="location" class="input" type="text" required />
+        <br /><br />
+        <strong><label>Damage Details</label></strong>
+        <br /><br />
+        <textarea
+          rows="5"
+          id="additional_details"
+          class="inputbox"
+          type="text"
+          placeholder="Example: El-Camino Real road is closed between Sunnyvale and Santa Clara"
+        ></textarea>
+        <br />
+        <div class="reported-successfully"></div>
+        <button
+          type="button"
+          class="post-btn"
+          id="report-incident-btn"
+          onclick="reportIncident()"
+        >
+          Report Incident
+        </button>
+      </form>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.2/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"></script>
+  <script src="/js/cookie.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/incidentNotification.js"></script>
+  <script src="/js/notificationModal.js"></script>
+  <script src="/js/logout.js"></script>
+  <script src="/js/navBar.js"></script>
+  <script src="/js/footer.js"></script>
+  <script src="/js/format.js"></script>
+  <script src="/js/reportIncident.js"></script>
+</html>

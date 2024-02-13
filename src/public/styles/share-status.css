@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+th {
+  background-color: #dddddd;
+  color: black;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.share_status {
+  overflow-y: auto;
+  border: 3px solid #f1f1f1;
+  background-color: #333;
+  color: white;
+  /* opacity: 0.95; */
+  border-radius: 6px;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  height: 70%;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.status-message-success {
+  color: green;
+}
+
+.status-message-error {
+  color: red;
+}
+
+.share-btn {
+  width: 95%;
+  padding: 10px;
+  margin-top: -0.4em;
+  margin-bottom: 0em;
+}
+
+.statusicon {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  display: inline;
+  float: left;
+}
+
+@media (max-width: 700px) {
+  button {
+    border: 1px solid white;
+    height: auto;
+    font-size: 12px;
+    padding: 5px;
+  }
+  footer {
+    margin-top: 20%;
+  }
+}

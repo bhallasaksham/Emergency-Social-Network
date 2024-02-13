@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-position: center;
+  background-size: cover;
+  background-color: #d6d6d6;
+}
+
+p {
+  color: white;
+  text-align: center;
+  display: inline;
+}
+
+header {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+
+button {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+span.undefined {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+footer {
+  padding: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: black;
+  margin-top: 10%;
+}
+
+.container {
+  overflow-y: auto;
+  border: 3px solid black;
+  border-radius: 6px;
+  position: relative;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  height: 80%;
+  width: 80%;
+  padding: 15px;
+  text-align: center;
+}
+
+.post-btn {
+  width: 95%;
+  padding: 10px;
+  margin-top: -0.4em;
+  margin-bottom: 0em;
+}
+
+.quiz-panel {
+  text-align: left;
+}
+.sub-panel {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.status {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #0fcc45;
+  border-radius: 50%;
+}
+
+@media (max-width: 700px) {
+  button {
+    border: 1px solid white;
+    height: auto;
+    font-size: 12px;
+    padding: 5px;
+  }
+  footer {
+    margin-top: 20%;
+  }
+}

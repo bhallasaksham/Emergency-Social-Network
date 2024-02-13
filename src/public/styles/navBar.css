@@ -1,0 +1,105 @@
+.topnav {
+  padding: 15px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: black;
+  position: relative;
+  z-index: 999;
+}
+
+.topnav .nav-bar-heading {
+  padding: 3px;
+  font-size: 17px;
+}
+
+#measure-performance {
+  display: none;
+}
+
+button.nav-bar-heading {
+  display: inline-block;
+  border: none;
+  size: 20px;
+}
+.search-input {
+  padding: 7px 10px;
+  border-radius: 10px;
+  width: 70%;
+}
+button.search-btn {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #nav-bar {
+  display: none;
+  z-index: 4;
+}
+
+.topnav .fa.fa-bars {
+  padding: 20px;
+}
+
+.topnav #search-bar {
+  display: none;
+  z-index: 4;
+}
+
+#search-bar {
+  display: none;
+  z-index: 4;
+  height: 31px;
+}
+
+.nav-bar-heading {
+  display: inline-block;
+}
+/* Style navigation menu links */
+.hamburger-list {
+  display: block;
+  padding: 12px;
+}
+
+#nav-bar-btn {
+  float: right;
+}
+
+.topnav a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.title {
+  margin-left: 30px;
+}
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#red-help-btn {
+  display: none;
+  color: white;
+  background-color: red;
+  border-radius: 0;
+  font-size: 13px;
+  box-shadow: 4px 4px #747373;
+  padding: 5px;
+}

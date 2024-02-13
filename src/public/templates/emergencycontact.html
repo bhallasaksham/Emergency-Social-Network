@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width maximum-scale=1 initial-cale=1.0"
+    />
+    <link rel="stylesheet" href="/styles/common.css" />
+    <link rel="stylesheet" href="/styles/navBar.css" />
+    <link rel="stylesheet" href="/styles/emergency-contact.css" />
+    <link rel="stylesheet" href="/styles/notificationModal.css" />
+    <link rel="stylesheet" href="/styles/incident-notification.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Emergency Contact</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>My Emergency Contact</h3>
+      <form id="contact-info" action="">
+        <h5>
+          Select a citizen from directory as your emergency contact. You can
+          contact them quickly using the Help button.
+        </h5>
+        <h4>Username*</h4>
+        <select id="citizen-list"></select>
+        <br />
+        <h5>
+          Enter the citizen's email address to send additional notifications
+        </h5>
+        <h4>Email (optional)</h4>
+        <input type="email" id="email-address" name="email-address" />
+        <br />
+        <br />
+        <input type="checkbox" id="enable-send-public-message" />
+        <h6 style="display: inline">
+          Also send help messages to the public wall
+        </h6>
+        <br />
+        <br />
+        <button type="button" id="save-btn" onclick="onclickSaveBtn()">
+          Save
+        </button>
+      </form>
+      <br />
+      <div id="contact-saved-message"></div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.2/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+  <script src="/js/cookie.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/incidentNotification.js"></script>
+  <script src="/js/notificationModal.js"></script>
+  <script src="/js/format.js"></script>
+  <script src="/js/logout.js"></script>
+  <script src="/js/navBar.js"></script>
+  <script src="/js/emergencyContact.js"></script>
+  <script src="/js/footer.js"></script>
+</html>

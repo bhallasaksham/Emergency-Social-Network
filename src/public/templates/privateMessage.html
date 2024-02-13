@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width maximum-scale=1 initial-cale=1.0"
+    />
+    <link rel="stylesheet" href="/styles/privateMessage.css" />
+    <link rel="stylesheet" href="/styles/common.css" />
+    <link rel="stylesheet" href="/styles/notificationModal.css" />
+    <link rel="stylesheet" href="/styles/incident-notification.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Private Message</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="javascript:void(0);" class="icon" onclick="backToChatroomList()">
+        <i class="fa fa-arrow-left"></i
+      ></a>
+      <a class="title"></a>
+      <a id="search-information" onclick="onClickSearchInPrivateMessageBtn()"
+        ><i class="fa fa-search" aria-hidden="true"></i
+      ></a>
+      <div id="search-bar">
+        <input
+          class="search-input"
+          type="search"
+          id="keyword-input"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button
+          class="search-btn"
+          type="submit"
+          onclick="getKeywordInPrivateMessage()"
+        >
+          Search
+        </button>
+        <a class="info-icon" onclick="showInfo()">
+          <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="chatroom">
+        <div class="chatroom-chat"></div>
+        <button
+          type="button"
+          id="load-more"
+          class="post-btn"
+          onclick="loadMore()"
+        >
+          Load More
+        </button>
+        <p id="no-data"></p>
+        <form class="chatroom-inputarea">
+          <input
+            type="text"
+            id="message-input"
+            class="chatroom-input"
+            placeholder="Enter your message..."
+          />
+          <button id="send-btn" type="submit" class="chatroom-send-btn">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.2/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"></script>
+  <script src="/js/cookie.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/incidentNotification.js"></script>
+  <script src="/js/footer.js"></script>
+  <script src="/js/format.js"></script>
+  <script src="/js/privateMessage.js"></script>
+  <script src="/js/logout.js"></script>
+</html>

@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+.popup {
+  overflow-y: auto;
+  border: 3px solid #f1f1f1;
+  background-color: #333;
+  color: white;
+  /* opacity: 0.95; */
+  border-radius: 6px;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  height: 70%;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.statusicon {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  display: inline;
+  float: left;
+}
+
+p {
+  color: white;
+  text-align: center;
+  display: inline;
+}
+
+td {
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  button {
+    border: 1px solid white;
+    height: auto;
+    font-size: 12px;
+    padding: 5px;
+  }
+  .statusicon {
+    width: 35px;
+    height: 35px;
+  }
+  footer {
+    margin-top: 20%;
+  }
+}

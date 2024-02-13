@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width maximum-scale=1 initial-cale=1.0"
+    />
+    <!-- <link rel="stylesheet" href="/styles/common.css" /> -->
+    <link rel="stylesheet" href="/styles/navBar.css" />
+    <link rel="stylesheet" href="/styles/self-assessment-result.css" />
+    <link rel="stylesheet" href="/styles/notificationModal.css" />
+    <link rel="stylesheet" href="/styles/incident-notification.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Self Assessment</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3><strong>Self Assessment Quiz Result</strong></h3>
+      <br />
+      <br />
+      <div style="font-size: 100px">
+        <strong><i class="fa fa-check-circle-o" aria-hidden="true"></i></strong>
+      </div>
+      <h3>
+        <strong
+          ><p class="quiz-result">90</p>
+          /100</strong
+        >
+      </h3>
+      <br />
+      <button type="button" class="post-btn" onclick="shareQuizResult()">
+        Share to Public Wall
+      </button>
+      <br />
+      <br />
+      <button type="button" class="post-btn" onclick="onClickExit()">
+        Exit
+      </button>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.2/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"></script>
+  <script src="/js/cookie.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/incidentNotification.js"></script>
+  <script src="/js/notificationModal.js"></script>
+  <script src="/js/selfAssessmentResult.js"></script>
+  <script src="/js/logout.js"></script>
+  <script src="/js/navBar.js"></script>
+  <script src="/js/footer.js"></script>
+  <script src="/js/format.js"></script>
+</html>

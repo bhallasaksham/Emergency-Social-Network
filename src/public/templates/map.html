@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width maximum-scale=1 initial-cale=1.0"
+    />
+    <link rel="stylesheet" href="/styles/navBar.css" />
+    <link rel="stylesheet" href="/styles/map.css" />
+    <link rel="stylesheet" href="/styles/notificationModal.css" />
+    <link rel="stylesheet" href="/styles/incident-notification.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <title>Map</title>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div class="report-button" onclick="reportLocation()">Report Location</div>
+    <div class="filter-button" id="filter" onclick="filterMarker()">All</div>
+  </body>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.2/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"></script>
+  <script src="/js/cookie.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/incidentNotification.js"></script>
+  <script src="/js/notificationModal.js"></script>
+  <script src="/js/logout.js"></script>
+  <script src="/js/navBar.js"></script>
+  <script src="/js/format.js"></script>
+  <script src="/js/map.js"></script>
+  <script src="/js/SFHazardZones.js"></script>
+</html>

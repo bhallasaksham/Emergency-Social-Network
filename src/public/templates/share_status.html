@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width maximum-scale=1 initial-cale=1.0"
+    />
+    <link rel="stylesheet" href="/styles/common.css" />
+    <link rel="stylesheet" href="/styles/share-status.css" />
+    <link rel="stylesheet" href="/styles/navBar.css" />
+    <link rel="stylesheet" href="/styles/notificationModal.css" />
+    <link rel="stylesheet" href="/styles/incident-notification.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Share Status</title>
+  </head>
+
+  <body>
+    <div class="share_status">
+      <h2><strong>Select A Status To Share:</strong></h2>
+
+      <table id="statusTable">
+        <thead>
+          <tr>
+            <th>Status</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <form>
+            <tr>
+              <td>
+                <img
+                  class="statusicon"
+                  src="../icons/Red.png"
+                  alt="Red Icon"
+                  onclick="redClicked()"
+                />
+              </td>
+              <td>
+                <p>
+                  <strong>Emergency: </strong>I need help now. This is a life
+                  threatening emergency!
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img
+                  class="statusicon"
+                  src="../icons/Yellow.png"
+                  alt="Yellow Icon"
+                  onclick="yellowClicked()"
+                />
+              </td>
+              <td>
+                <p>
+                  <strong>Help: </strong>I need help, but this is not a life
+                  threatening emergency.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img
+                  class="statusicon"
+                  src="../icons/Green.png"
+                  alt="Green Icon"
+                  onclick="greenClicked()"
+                />
+              </td>
+              <td>
+                <p><strong>OK: </strong>I am OK. I do not need help.</p>
+              </td>
+            </tr>
+          </form>
+        </tbody>
+      </table>
+      <div class="selected-status"></div>
+      <br /><br />
+      <button type="button" class="share-btn" onclick="shareStatus()">
+        Share Status
+      </button>
+      <br />
+      <br />
+      <div class="share-status-message"></div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.2/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"></script>
+  <script src="/js/cookie.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/incidentNotification.js"></script>
+  <script src="/js/notificationModal.js"></script>
+  <script src="/js/shareStatus.js"></script>
+  <script src="/js/logout.js"></script>
+  <script src="/js/navBar.js"></script>
+  <script src="/js/footer.js"></script>
+  <script src="/js/format.js"></script>
+</html>

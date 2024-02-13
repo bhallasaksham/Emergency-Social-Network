@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width maximum-scale=1 initial-cale=1.0"
+    />
+    <link rel="stylesheet" href="/styles/navBar.css" />
+    <link rel="stylesheet" href="/styles/notificationModal.css" />
+    <link rel="stylesheet" href="/styles/incident-notification.css" />
+    <link rel="stylesheet" href="/styles/chatroom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Chatroom</title>
+  </head>
+  <body>
+    <div class="chatroom-container"></div>
+    <button
+      type="button"
+      class="circle-container post"
+      id="new-chatroom"
+      onclick="onClickPostButton()"
+    >
+      <div class="fa fa-pencil fa-2x" aria-hidden="true"></div>
+    </button>
+
+    <div class="modal" id="post-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close" onclick="onClickCloseButton()">&times;</span>
+          <p>Select a user you want to chat...</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.2/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"></script>
+  <script src="/js/cookie.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/incidentNotification.js"></script>
+  <script src="/js/notificationModal.js"></script>
+  <script src="/js/logout.js"></script>
+  <script src="/js/navBar.js"></script>
+  <script src="/js/footer.js"></script>
+  <script src="/js/chatroom.js"></script>
+  <script src="/js/format.js"></script>
+</html>

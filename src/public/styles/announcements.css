@@ -1,0 +1,11 @@
+div#notification-list {
+  height: 55%;
+}
+
+form#announcement-form {
+  margin-top: 3vh;
+}
+
+.announcement-list {
+  overflow: scroll;
+}

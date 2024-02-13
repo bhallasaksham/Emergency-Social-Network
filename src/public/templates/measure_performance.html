@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width maximum-scale=1 initial-cale=1.0"
+    />
+    <link rel="stylesheet" href="/styles/common.css" />
+    <link rel="stylesheet" href="/styles/navBar.css" />
+    <link rel="stylesheet" href="/styles/measure-performance.css" />
+    <link rel="stylesheet" href="/styles/notificationModal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Measure Performance</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3><strong>Measure Performance</strong></h3>
+      <br />
+      <form id="performance-test">
+        <p>
+          <strong><u>Duration</u></strong>
+        </p>
+        <h4>Enter duration of performance test in seconds:</h4>
+        <input
+          id="duration"
+          class="input"
+          type="number"
+          placeholder="0"
+          required
+        /><br />
+        <br />
+        <p>
+          <strong><u>Interval</u></strong>
+        </p>
+        <h4>Enter interval between successive requests in milliseconds:</h4>
+        <input
+          id="interval"
+          class="input"
+          type="number"
+          placeholder="0"
+          required
+        /><br />
+        <br />
+        <br />
+        <button type="button" class="post-btn" onclick="startPerformanceTest()">
+          Initiate Performance Test
+        </button>
+        <br />
+        <br />
+        <button
+          type="button"
+          class="post-btn"
+          onclick="onClickTerminatePerformanceTestBtn()"
+        >
+          Terminate Performance Test
+        </button>
+      </form>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.2/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"></script>
+  <script src="/js/cookie.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/notificationModal.js"></script>
+  <script src="/js/measurePerformance.js"></script>
+  <script src="/js/logout.js"></script>
+  <script src="/js/navBar.js"></script>
+  <script src="/js/footer.js"></script>
+  <script src="/js/format.js"></script>
+</html>

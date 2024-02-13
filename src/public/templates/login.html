@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width maximum-scale=1 initial-cale=1.0"
+    />
+    <link rel="stylesheet" href="/styles/common.css" />
+    <link rel="stylesheet" href="/styles/login.css" />
+    <title>Join Community</title>
+  </head>
+  <body>
+    <header>
+      &nbsp;
+      <h2>Emergency Social Network</h2>
+      &nbsp;
+    </header>
+    <div class="imagebackground"></div>
+    <div class="registerform">
+      &nbsp;
+      <h2><strong>Join Emergency Social Network</strong></h2>
+      &nbsp;
+      <br />
+      <form id="account" action="">
+        <div class="col">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            required
+          /><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <br />
+          <button type="button" onclick="login()">Join Community</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js"></script>
+  <script src="/js/cookie.js"></script>
+  <script src="/js/login.js"></script>
+  <script src="/js/footer.js"></script>
+</html>
